@@ -19,10 +19,13 @@
 
 @import url("https://use.typekit.net/ajo0pmh.css");
 
-        body {
+body {
             font-family: "input-mono", monospace;
             font-weight: 400, 700;
             font-style: normal;
+            a{
+                text-decoration: none
+            }
 
             ;
             font-size:
@@ -87,12 +90,23 @@
         .card{
             border-radius: 20px 0px 20px 0px;
             background-color: white;
-            padding: 30px;
-            width: calc(30% - 0px);
+            padding: 25px;
+            width: calc(22% - 0px);
             color: #22769D;
-            font-size: 20px;
+            font-size: 15px;
             font-weight: 900;
             margin-bottom: 25px;
+        }
+        .card2{
+            border-radius: 20px 0px 20px 0px;
+            border:1px solid #82FC97;
+            padding: 22px;
+            width: calc(22% - 0px);
+            color: #fff;
+            font-size: 15px;
+            font-weight: 900;
+            margin-bottom: 25px;
+            
         }
 
         .footer{
@@ -104,14 +118,14 @@
 
         .horario{
             font-weight: 700;
-            color: #00235E;
+            color: #fff;
             font-size: 1em;
             line-height: 20px;
         }
 
         .atividade{
-            font-weight: 400;
-            color: #00235E;
+            font-weight: 700;
+            color: #fff;
             font-size: 1em;
             line-height: 20px;
         }
@@ -136,10 +150,12 @@
             font-size: 20px;
             font-weight: 900;
             margin-bottom: 25px;
+            border-radius: 20px;
         }
-
+        
         .fotoPalestrante{
             width: 100%;
+            height: 250px;
         }
 
 
@@ -147,26 +163,12 @@
             margin: 0 auto;
             max-width:
                 /* @layout-max-width */
-                950px
+                1050px
                 /* @layout-max-width */
             ;
         }
 
-        .itauLogo{
-            width: 35%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-        }
-
-        .ibmecLogo{
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-        }
-
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1000px) {
             .columnContainer {
                 width: 100% !important;
             }
@@ -193,14 +195,6 @@
                 background-size: contain;
                 background-position: top center;
             }
-
-            .itauLogo{
-                width: 25%;
-        }
-            .ibmecLogo{
-                width: 45%;
-                margin-top: -5px;
-        }
             
         }
     </style>
@@ -250,7 +244,7 @@
                         <p><span style="background-color: #8AFEDC; padding: 3px;color: #1D3C67; letter-spacing: 3;">2023</span></p>
                     </div>
                     <div data-editorblocktype="Text" style="color: #8AFEDC; margin: 15px 0px; letter-spacing: 4; text-transform: uppercase;">
-                        <h1><span>28/setembro</span></h1>
+                        <h1><span>09/outubro</span></h1>
                     </div>
                     <div data-editorblocktype="Text">
                         <p><span style="white-space:pre-wrap; color: #82FC97; text-transform: uppercase; letter-spacing: 3;">9h às 13h</span></p>
@@ -265,7 +259,7 @@
                         <p style="font-weight: 900; font-size: 20px; color: white;">Presencial</p>
                     </div>
                     <div data-editorblocktype="Text" style="margin-bottom: 30px;">
-                        <p><span style="white-space:pre-wrap; text-transform: uppercase; color: white; font-weight: 100; font-size: 12; letter-spacing: 4;">em Brasília - DF</span></p>
+                        <p><span style="white-space:pre-wrap; text-transform: uppercase; color: white; font-weight: 100; font-size: 12; letter-spacing: 4;">em Brasília - DF, na sede do sistema do transporte</span></p>
                     </div>
 
 
@@ -288,10 +282,8 @@
         <div data-section="true" style="padding: 50px 0px; background-color: #012264;" class="">
             <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
                 <div style="clear:both;"></div>
-                <div data-container="true" class="columnContainer" data-container-width="100"
-                    style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    >
-                    <div data-editorblocktype="Button"><p class="inscrevase" style="background-color: #82FC97;">inscreva-se</p>
+                <div data-container="true" class="columnContainer" data-container-width="100" style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                    <div data-editorblocktype="Button"><a href="https://eventos.sestsenat.org.br/event/registration?id=Frum_ITL_de_Inovao_do_Transporte_-_20241993304972"><p class="inscrevase" style="background-color: #82FC97;">inscreva-se</p></a>
                     </div>
                 </div>  
                 <div style="clear:both;"></div>
@@ -305,9 +297,7 @@
 <div style="background-color: #22769D; padding: 70px 0px;"> 
      <div data-layout="true">
         <div data-section="true" style="padding: 10px;" class="">
-            <div style="display: flex;
-            width: 100%;
-        ;flex-wrap: wrap;" class="containerWrapper">
+            <div style="display: flex; width: 100%;flex-wrap: wrap;" class="containerWrapper">
                 <div style="clear:both;"></div>
                 <div data-container="true" class="columnContainer" data-container-width="50"
                     style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
@@ -321,17 +311,14 @@
 
                     </div>
                 </div>
-                <div data-container="true" class="columnContainer" data-container-width="50"
-                    style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="containerdfcef114033a91689693058279">
+                <div data-container="true" class="columnContainer" data-container-width="50"style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"id="containerdfcef114033a91689693058279">
                     <div data-editorblocktype="Text">
-                        <h2><span style="white-space:pre-wrap; color: #8AFEDC;">Valor agregado pela responsabilidade socioambiental e por boas práticas de governança</span></h2>
+                        <h2><span style="white-space:pre-wrap; color: #8AFEDC;">NO CAMINHO DO FUTURO, NA VANGUARDA DO TRANSPORTE</span></h2>
 
 
                     </div>
                     <div data-editorblocktype="Text">
-                        <p style="color: white;"><span style="white-space:pre-wrap;">Demanda crescente no setor de transporte, a insígnia ESG (Ambiental, Social e Governança) consolida o valor financeiro atribuído a práticas sustentáveis. Dessa forma, além de serem uma necessidade diante das mudanças climáticas, as boas práticas socioambientais e de governança representam um diferencial competitivo.
-                            <br>Nesse sentido, o Sistema Transporte entende a importância do tema e vem preparando ações e um planejamento voltado à adequação dos processos a fim de alcançar as melhores práticas de ESG na atividade transportadora e dentro das instituições que compõem o Sistema. Esse é o principal objetivo dessa edição do Fórum ITL de Inovação do Transporte – ESG no Transporte.</span></p>
+                        <p style="color: white;"><span style="white-space:pre-wrap;">O Fórum ITL de Inovação do Transporte é uma iniciativa do Instituto de Transporte e Logística, em parceria com a CNT e o SEST SENAT, para fomentar a discussão e a troca de conhecimentos sobre ferramentas e tendências inovadoras e tecnológicas aplicáveis ao setor de transporte. É um evento híbrido que reúne especialistas para debates presenciais e online, com transmissão ao vivo pelo canal da CNT no Youtube. Nesta quarta edição, o fórum promoverá uma sessão especial dedicada à Governança, focando na sucessão familiar, uma realidade que precisa ser abordada com seriedade. Afinal, uma transição bem-sucedida de liderança dentro de empresas familiares é fundamental para garantir a continuidade, a sustentabilidade dos negócios e as estratégias para preparar a próxima geração de líderes no setor de transporte.</p>
                     </div>
                 </div>
                 <div style="clear:both;"></div>
@@ -373,27 +360,33 @@
     <div data-section="true" class="">
         <div style="display: flex; width: 100%; flex-wrap: wrap; justify-content: space-between; margin-top: 60px; margin-bottom: -60px;" class="containerWrapper">
 
-            <div data-container="true" class="columnContainer card" 
-                style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container1ed87f37598761689693087942">
-                <div data-editorblocktype="Text">
-                    <p><span style="white-space:pre-wrap;">Consolide parcerias estratégicas que impulsionem a inovação e a implementação de práticas de ESG na sua empresa de transporte.</span></p>
+            <div class="columnContainer card" style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;" id="container1ed87f37598761689693087942">
+                <div data-container="true"><div data-editorblocktype="Text">
+                    <p><span style="white-space:pre-wrap;"><span style="font-weight: 900;">O panorama atual do setor de transportes:</span> </span></p>
+                    <p style="margin-top: 5%;">Discutir os principais desafios e oportunidades em relação à sustentabilidade ambiental, responsabilidade social e governança corporativa no setor de transportes.</p>
+                </div></div>
+            </div>
+            
+            <div class="columnContainer card">
+                <div style="border: 1px solid #fff; border-radius:20px 0px 20px 0px ;color: #22769D;">
+                    <p><span style="white-space:pre-wrap;"></span><span style="font-weight: 900;">Políticas e regulamentações:</span> </p>
+                    <p style="margin-top: 5%;">Analisar o papel das políticas públicas e das regulamentações na promoção do ESG no transporte, incluindo incentivos, metas de redução de emissões e padrões de segurança.</p>
                 </div>
             </div>
 
-            <div data-container="true" class="columnContainer card"
-                style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container34ea23c72f90b1689693087942">
+
+
+            <div data-container="true" class="columnContainer card" style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p><span style="white-space:pre-wrap;">Aprenda com especialistas renomados como implementar as melhores práticas de ESG na sua empresa.</span></p>
+                    <p><span style="white-space:pre-wrap;"> <span style="font-weight: 900;">Educação e capacitação:</span> </span></p>
+                      <p style="margin-top: 5%;">Discutir a importância da educação, treinamento e desenvolvimento profissional para capacitar os profissionais do setor de transporte a adotarem práticas de ESG e implementarem soluções inovadoras.</p>
                 </div>
             </div>
 
-            <div data-container="true" class="columnContainer card"
-                style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container9d40bf6ee5ed11689693087942">
+            <div data-container="true" class="columnContainer card" style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word; ">
                 <div data-editorblocktype="Text">
-                    <p><span style="white-space:pre-wrap;">Conheça casos de sucesso de empresas e organizações que estão liderando a implementação de práticas de ESG no setor de transporte.</span></p>
+                    <p><span style="white-space:pre-wrap;"><span style="font-weight: 900;"> Casos de sucesso e melhores práticas:</span> </span></p>
+                    <p style="margin-top: 5%;">Compartilhar exemplos de empresas e organizações que estão liderando o caminho na implementação de práticas de ESG no setor de transportes, destacando seus desafios, sucessos e lições aprendidas.</p>
                 </div>
             </div>
 
@@ -410,10 +403,8 @@
      <div data-section="true" style="padding: 50px 0px; background-color: #012264;" class="">
         <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
             <div style="clear:both;"></div>
-            <div data-container="true" class="columnContainer" data-container-width="100"
-                style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container199a5499b65ce1689693032726">
-                <div data-editorblocktype="Button"><p class="inscrevase" style="background-color: #82FC97;">inscreva-se</p>
+            <div data-container="true" class="columnContainer" data-container-width="100" style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Button"><a href="https://eventos.sestsenat.org.br/event/registration?id=Frum_ITL_de_Inovao_do_Transporte_-_20241993304972"><p class="inscrevase" style="background-color: #82FC97;">inscreva-se</p></a>
                 </div>
             </div>  
             <div style="clear:both;"></div>
@@ -432,7 +423,7 @@
                         style="margin-top: 70px; display: block; min-height: 70px; min-width: 15px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
                         >
                         <div data-editorblocktype="Text">
-                            <h1><span style="white-space:pre-wrap; color: #82FC97;">Palestrantes</span>
+                            <h1><span style="white-space:pre-wrap; color: #82FC97;">Painelistas</span>
                             </h1>
                         </div>
                     </div>
@@ -453,176 +444,40 @@
                         <!--FOTO-->
                         <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
                             <img class="fotoPalestrante"
-                                src="https://publicador.sestsenat.org.br/arquivos/9d760a6b-fce1-4eb0-a6f6-e76d25691c6a.png">
+                                src="https://publicador.sestsenat.org.br/arquivos/af3c1323-d343-4a7f-b651-fa55ec63e112.jpg">
                         </div>
         
                         <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
                             <div data-editorblocktype="Text">
-                                <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Prof. Pedro Lins</h2>
-                                <p style="font-size: 12px; line-height: 16px;">Com 40 anos de experiência executiva, acadêmica e voluntariado, desenvolve projetos de consultoria, governança e gestão e educação em áreas como governança ambiental, social e corporativa (ESG), competitividade sustentável e responsabilidade social corporativa.
-                                    <br><a href="" style="color: 82FC97;">Saiba mais</a></p>
+                                <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Urubatan Helou</h2>
+                                <p style="font-size: 12px; line-height: 16px;">Diretor-presidente da Braspress Transportes Urgentes, uma das maiores empresas de transportes de encomendas do Brasil, com 120 filiais, 12.935 entre colaboradores diretos e indiretos e uma frota em operação de 3.090 veículos próprios.
+                                    </p>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-        
-                <!--PALESTRANTE 2-->
-                <div data-container="true" class="columnContainer palestrantes"
-                    style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container1ed87f37598761689693087942">
-                    <div>
-                        <!--FOTO-->
-                        <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
-                            <img class="fotoPalestrante"
-                                src="https://publicador.sestsenat.org.br/arquivos/d80a5711-2492-4dc8-8f16-eb938914e8d0.png">
-                        </div>
-        
-                        <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
-                            <div data-editorblocktype="Text">
-                                <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Giuliano Marchiani</h2>
-                                <p style="font-size: 12px; line-height: 16px;">Ampla experiência na área de gestão e liderança de Sustentabilidade, governança ambiental, social e corporativa (ESG), meio ambiente, saúde e segurança do trabalho, <i>lean projects</i>, inovação, <i>digital transformation</i>, finanças sustentáveis, e <i>shared value principles</i>.
-                                    <br><a href="" style="color: 82FC97;">Saiba mais</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <!--PALESTRANTE 3-->
-                <div data-container="true" class="columnContainer palestrantes"
-                    style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container1ed87f37598761689693087942">
-                    <div>
-                        <!--FOTO-->
-                        <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
-                            <img class="fotoPalestrante"
-                                src="https://publicador.sestsenat.org.br/arquivos/4b2915a7-db22-4c1b-803b-b8185131e193.png">
-                        </div>
-        
-                        <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
-                            <div data-editorblocktype="Text">
-                                <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Maicon Satiro de Oliveira</h2>
-                                <p style="font-size: 12px; line-height: 16px;">Mais de 20 anos de experiência nas áreas de planejamento, estratégia, gestão de projetos e desenvolvimento de estudos econômicos e de viabilidade para a formulação de políticas públicas e do uso de tecnologia da informação e inovação na área de transporte.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--PALESTRANTE 4-->
-                <div data-container="true" class="columnContainer palestrantes"
-                    style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container1ed87f37598761689693087942">
-                    <div>
-                        <!--FOTO-->
-                        <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
-                            <img class="fotoPalestrante"
-                                src="https://publicador.sestsenat.org.br/arquivos/6edf1d37-bba1-4cb5-b353-e1859da7f79a.png">
-                        </div>
-        
-                        <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
-                            <div data-editorblocktype="Text">
-                                <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Marcelo Luís Schröder</h2>
-                                <p style="font-size: 12px; line-height: 16px;">Diretor com mais de 30 anos de experiência, sendo ESG uma das áreas corporativas sob a sua gestão. Formado em direito, pós-graduado em administração de empresas e especializado em administração de recursos humanos.
-                                    <br><a href="" style="color: 82FC97;">Saiba mais</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!--PALESTRANTE 5-->
-                <div data-container="true" class="columnContainer palestrantes"
-                    style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container1ed87f37598761689693087942">
-                    <div>
-                        <!--FOTO-->
-                        <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
-                            <img class="fotoPalestrante"
-                                src="https://publicador.sestsenat.org.br/arquivos/198cad79-b1c2-4474-b9e4-4dce7dcf015f.png">
-                        </div>
-        
-                        <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
-                            <div data-editorblocktype="Text">
-                                <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Maria Clara Fernandes de Oliveira</h2>
-                                <p style="font-size: 12px; line-height: 16px;">Gestora com 17 anos de experiência em sustentabilidade, responsabilidade social, diversidade, inclusão e relações institucionais. Habilitada em Relações Públicas com especializações em Gestão da Sustentabilidade, Gestão de Negócios, Gestão de Projetos e Gestão da Comunicação.
-                                    <br><a href="" style="color: 82FC97;">Saiba mais</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                 <!--PALESTRANTE 6-->
-                 <div data-container="true" class="columnContainer palestrantes"
-                 style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                 id="container1ed87f37598761689693087942">
-                 <div>
-                     <!--FOTO-->
-                     <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
-                         <img class="fotoPalestrante"
-                             src="https://publicador.sestsenat.org.br/arquivos/0bc842e6-de0e-4156-956e-645a8ed3f2dd.png">
-                     </div>
-     
-                     <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
-                         <div data-editorblocktype="Text">
-                             <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Aletea Madacki</h2>
-                             <p style="font-size: 12px; line-height: 16px;">Mestre em Sustentabilidade, com experiência em educação para a sustentabilidade, nos relatos de performance sustentáveis, engajamento da cadeia de valor, economia circular e projetos de P&D. Atualmente, é especialista em mudanças climáticas e responsável técnica pelas iniciativas de carbono na Azul Linhas Aéreas.</p>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-
-
-              <!--PALESTRANTE 7-->
-              <div data-container="true" class="columnContainer palestrantes"
-              style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-              id="container1ed87f37598761689693087942">
-              <div>
-                  <!--FOTO-->
-                  <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
-                      <img class="fotoPalestrante"
-                          src="https://publicador.sestsenat.org.br/arquivos/a11c6572-bd07-4ec7-8375-008fd28c8ea5.png">
-                  </div>
-  
-                  <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
-                      <div data-editorblocktype="Text">
-                          <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Tadeu Matos</h2>
-                          <p style="font-size: 12px; line-height: 16px;">Profissional de recursos humanos e saúde, segurança e meio ambiente com mais de seis anos de experiência em liderança e gestão estratégica. É especializado em desenvolvimento de talentos, recrutamento, seleção, políticas de inclusão e diversidade.
-                              <br><a href="" style="color: 82FC97;">Saiba mais</a></p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-
-           <!--PALESTRANTE 8-->
-           <div data-container="true" class="columnContainer palestrantes"
-           style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-           id="container1ed87f37598761689693087942">
-           <div>
-               <!--FOTO-->
-               <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px);">
-                   <img class="fotoPalestrante"
-                       src="https://publicador.sestsenat.org.br/arquivos/82b3e394-d9c0-4b94-ba9d-d792d5379255.png">
-               </div>
-
-               <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
-                   <div data-editorblocktype="Text">
-                       <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Lucas Vasconcellos</h2>
-                       <p style="font-size: 12px; line-height: 16px;">Especialista em sustentabilidade do Itaú Unibanco, com foco na implementação do compromisso net zero e da estratégia de descarbonização da instituição. Contador com certificação em Sustainability e Climate Risk da Global Association of Risk Professionals (Garp).
-                           </p>
+        <!-- palestrante 2 -->
+           <div data-container="true" class="columnContainer palestrantes"style="display: block; min-height: 70px; min-width: 13.3333px; box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;" id="container1ed87f37598761689693087942">
+                <div>
+                   <!--FOTO-->
+                   <div data-container="true" class="columnContainer palestrante" style="width: calc(35% - 0px); height:248.698px ;">
+                       <img class="fotoPalestrante"  src="https://publicador.sestsenat.org.br/arquivos/6e19047b-11d5-433b-9965-a864f19e2376.png">
                    </div>
-               </div>
-           </div>
-       </div>
+
+                   <div data-container="true" class="columnContainer palestrante" style="padding-right: 20px; padding-left: 20px;">
+                       <div data-editorblocktype="Text">
+                           <h2 style="font-size: 1em; margin: 0px 0px 15px 0px;;">Ricardo Vaze</h2>
+                           <p style="font-size: 12px; line-height: 16px;">Diretor de Governança, Jurídico e Tributário do Grupo Águia Branca. Responsável pela coordenação das gerências Jurídica, Tributária, Contábil, Governança e Compliance do  Grupo.</p>
+                       </div>
+                   </div>
+                </div>
+        </div>
 
 
              
         
+                </div>
             </div>
-        </div>
         </div>
     </div>
     
@@ -631,77 +486,62 @@
 
 
     <!-- SECTION INSCREVA-SE CARD -->
-<div style="padding: 10px; background-image: url('_Assets/_Assets/Card_1080x1080px_Participe_FIT_.png'); background-repeat: no-repeat; background-size: cover; background-position: bottom center; background-color: #012264;">
-    <div data-layout="true">
-        <div data-section="true"
-            class="">
-            <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-                <div data-container="true" class="columnContainer" data-container-width="50"
-                    style="padding: 90px 10px; display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container3b88af4e3e5141689693215931">
-                    <div data-editorblocktype="Text">
-                        <h1><span style="white-space:pre-wrap; color: white;">Inscreva-se agora!</span></h1>
+    
+    <div style="padding: 10px; background-image: url( https://publicador.sestsenat.org.br/arquivos/f306ca5c-c616-4246-affc-583e10def1ee.png ); background-repeat: no-repeat; background-size: cover; background-position: bottom center; background-color: #012264;">
+        <div data-layout="true">
+            <div data-section="true" class="">
+                <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+                    <div data-container="true" class="columnContainer" data-container-width="50" style="padding: 90px 10px; display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                        <div data-editorblocktype="Text">
+                            <h1><span style="white-space:pre-wrap; color: white;">Inscreva-se agora!</span></h1>
+                        </div>
+                        <div style="background-color: white; padding: 30px; margin-top: 30px;">
+                        <div data-editorblocktype="Text">
+                            <p><span style="white-space:pre-wrap;">O FIT — ESG no Transporte é o espaço ideal para debates qualificados que geram informações, conhecimento e negócios entre empresas de transporte, infraestrutura, tecnologia, instituições financeiras, entidades e institutos de pesquisa, acadêmicos e autoridades públicas.</span></p>
+                        </div>
+                        <div data-editorblocktype="Button"><a href="https://eventos.sestsenat.org.br/event/registration?id=Frum_ITL_de_Inovao_do_Transporte_-_20241993304972"><p class="inscrevase" style="background-color: #82FC97;">inscreva-se</p></a>
+                        </div>
                     </div>
-                    <div style="background-color: white; padding: 30px; margin-top: 30px;">
-                    <div data-editorblocktype="Text">
-                        <p><span style="white-space:pre-wrap;">O FIT — ESG no Transporte é o espaço ideal para um debate qualificado e gerador de informações, conhecimento e negócios junto a empresas de transporte, infraestrutura, tecnologia, instituições financeiras e de financiamento, entidades e institutos de pesquisa e desenvolvimento, academia e autoridades públicas.</span></p>
                     </div>
-                    <div data-editorblocktype="Button"><a class="inscrevase" style="margin-right: auto; margin-left: 0px; margin-top: 30px; background-color: #0b77ae; color: white; opacity: 50%;"
-                        href=""
-                        >Increva-se</a>
+                    <div data-container="true" class="columnContainer" data-container-width="50" style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">​​​​​​​
                     </div>
+                    <div style="clear:both;"></div>
                 </div>
-                </div>
-                <div data-container="true" class="columnContainer" data-container-width="50"
-                    style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container46e977f3c8a3f1689693215931">​​​​​​​
-                </div>
-                <div style="clear:both;"></div>
             </div>
         </div>
     </div>
-</div>
 
 
 
 <!-- SECTION PROGRAMACAO -->
-<div style="padding: 90px 10px;background-color: #22769D;">
+<div style="padding: 90px 10px;background-color: #22769D; color: #fff;">
     <div data-layout="true">
-        <div data-section="true"
-            class="">
+        <div data-section="true" class="">
             <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-                <div data-container="true" class="columnContainer" data-container-width="50"
-                    style=" display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container3b88af4e3e5141689693215931">
+                <div data-container="true" class="columnContainer" data-container-width="50" style=" display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                     <div data-editorblocktype="Text">
-                        <h1><span style="white-space:pre-wrap; color: #00235E;">Inscreva-se agora!</span></h1>
+                        <h1><span style="white-space:pre-wrap; color: #fff;">Programação</span></h1>
                     </div>
                     <div data-editorblocktype="Text" style="margin-top: 30px; margin-bottom: 40px;">
-                        <p><span style="background-color: #22769D; padding: 5px 8px; text-transform: uppercase; letter-spacing: 3px; white-space:pre-wrap; color: white;">28/setembro   9h às 13h</span></p>
+                        <p><span style="background-color: #22769D; padding: 5px 8px; text-transform: uppercase; letter-spacing: 3px; white-space:pre-wrap; color: white;">09/outubro   8h às 17h</span></p>
                     </div>
                 </div>
-                <div data-container="true" class="columnContainer" data-container-width="50"
-                    style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container46e977f3c8a3f1689693215931">​​​​​​​
+                <div data-container="true" class="columnContainer" data-container-width="50" style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">​​​​​​​
                 </div>
                 <div style="clear:both;"></div>
             </div>
 
 
-            <!-- LINHA PROGRAMACAO -->
+            
             <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-                <div data-container="true" class="columnContainer" data-container-width="20"
-                    style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container3b88af4e3e5141689693215931">
+                <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                     <div data-editorblocktype="Text">
-                        <p class="horario"><span style="white-space:pre-wrap;">8h às 8h50</span></p>
+                        <p class="horario"><span style="white-space:pre-wrap; color:#fff;">8h às 8h50</span></p>
                     </div>
                 </div>
-                <div data-container="true" class="columnContainer" data-container-width="80"
-                    style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container46e977f3c8a3f1689693215931">
+                <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                     <div data-editorblocktype="Text">
-                        <p class="atividade"><span style="white-space:pre-wrap;"><strong>Credenciamento e café de boas-vindas</strong></span></p>
+                        <p class="atividade"><span style="white-space:pre-wrap; color:#fff;"><strong>Credenciamento e café de boas-vindas</strong></span></p>
                     </div>​​​​​​​
                 </div>
                 <hr style="width: 100%;">
@@ -709,20 +549,15 @@
             </div>
 
 
-         <!-- LINHA PROGRAMACAO -->
          <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="horario"><span style="white-space:pre-wrap;">9h às 9h30</span></p>
+                    <p class="horario"><span style="white-space:pre-wrap; color:#fff;">9h às 9h30</span></p>
                 </div>
             </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Mesa de abertura:</strong><br>Vander Costa - Presidente do Sistema Transporte<br>Cloves Benevides - Subsecretário de Sustentabilidade do Ministério dos Transportes<br>Josias Mario da Vitória - Deputado Federal (PP/ES)</span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap; color:#fff;"><strong>Mesa de abertura: presidência do Sistema Transporte e autoridades do Governo Federal</strong></span></p>
                 </div>​​​​​​​
             </div>
             <hr style="width: 100%;">
@@ -730,20 +565,16 @@
         </div>
 
 
-         <!-- LINHA PROGRAMACAO -->
+         
          <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
                     <p class="horario"><span style="white-space:pre-wrap;">9h30 às 10h10</span></p>
                 </div>
             </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Palestra com o professor e consultor Pedro Lins:</strong><br>ESG – Importância para o mercado e para a sociedade</span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Palestra sobre ESG</strong></span></p>
                 </div>​​​​​​​
             </div>
             <hr style="width: 100%;">
@@ -751,39 +582,14 @@
         </div>
 
 
-        <!-- LINHA PROGRAMACAO -->
+        
         <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="horario"><span style="white-space:pre-wrap;">10h20 às 10h40</span></p>
+                    <p class="horario"><span style="white-space:pre-wrap;"><strong>10h10 às 10h30</strong></span></p>
                 </div>
             </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
-                <div data-editorblocktype="Text">
-                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Apresentação das iniciativas de ESG no Sistema Transporte</strong><br>Nicole Goulart – Diretora Executiva Nacional do SEST SENAT</span></p>
-                </div>​​​​​​​
-            </div>
-            <hr style="width: 100%;">
-            <div style="clear:both;"></div>
-        </div>
-
-
-         <!-- LINHA PROGRAMACAO -->
-         <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
-                <div data-editorblocktype="Text">
-                    <p class="horario"><span style="white-space:pre-wrap;">10h40 às 10h55</span></p>
-                </div>
-            </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
                     <p class="atividade"><span style="white-space:pre-wrap;"><strong>Coffee Break</strong></span></p>
                 </div>​​​​​​​
@@ -793,219 +599,197 @@
         </div>
 
 
-        <!-- LINHA PROGRAMACAO -->
-        <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
+         <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="horario"><span style="white-space:pre-wrap;">11h às 11h50</span></p>
+                    <p class="horario"><span style="white-space:pre-wrap;">10h30 às 11h30</span></p>
                 </div>
             </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>1º Painel: Debates com cases de ESG no Sistema Transporte</strong><br>Mediação: Eliana Costa  - Diretora adjunta do ITL<br>Empresas: Unidas, Transportes Bertolini, VLI Logística e Itaú</span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>1º Painel:</strong></span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>ESG no transporte: Práticas sustentáveis e inovadoras</strong></span></p>
+                    <p class="atividade"><b> Urubatan Helou - Braspress</b></p>
+                   <!--  <p class="atividade"> <strong>Empresas convidadas</strong></p> -->
                 </div>​​​​​​​
             </div>
             <hr style="width: 100%;">
             <div style="clear:both;"></div>
         </div>
 
-
-        <!-- LINHA PROGRAMACAO -->
         <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="horario"><span style="white-space:pre-wrap;">11h50 às 12h30</span></p>
+                    <p class="horario"><span style="white-space:pre-wrap;">11h30 às 12h30</span></p>
                 </div>
             </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>2º Painel: Debates com cases de ESG no Sistema Transporte</strong><br>Mediação: Fernanda Rezende – Diretor Executiva Adjunta da CNT<br>Empresas: CPTM, Azul Linhas Aéreas e Fadel Transportes</span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>2º Painel:<br> </strong></span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>ESG no transporte: Práticas sustentáveis e inovadoras </strong></span></p>
+                    <!-- <p class="aitividade"><b> Sr. Ricardo Vaze </b></p> -->
+                    <!-- <p class="atividade"> <strong>Empresas convidadas</strong></p>
+ -->
                 </div>​​​​​​​
             </div>
             <hr style="width: 100%;">
             <div style="clear:both;"></div>
         </div>
-
-
-        <!-- LINHA PROGRAMACAO -->
-        <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
+       <!--  <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="horario"><span style="white-space:pre-wrap;">12h40 às 12h50</span></p>
+                    <p class="horario"><span style="white-space:pre-wrap;">15h30 às 16h</span></p>
                 </div>
             </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
                 <div data-editorblocktype="Text">
-                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Encerramento</strong><br>João Victor Mendes - Diretor Executivo do ITL</span></p>
-                </div>​​​​​​​
-            </div>
-            <hr style="width: 100%;">
-            <div style="clear:both;"></div>
-        </div>
-
-
-        <!-- LINHA PROGRAMACAO -->
-        <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-            <div data-container="true" class="columnContainer" data-container-width="20"
-                style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container3b88af4e3e5141689693215931">
-                <div data-editorblocktype="Text">
-                    <p class="horario"><span style="white-space:pre-wrap;">EXTRA</span></p>
-                </div>
-            </div>
-            <div data-container="true" class="columnContainer" data-container-width="80"
-                style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                id="container46e977f3c8a3f1689693215931">
-                <div data-editorblocktype="Text">
-                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Conheça o Projeto Easy ESG:</strong> uma plataforma para implantação e gestão da Agenda ESG no transporte rodoviário de passageiros e de cargas, projeto desenvolvido no Programa Avançado de Capacitação do ITL.</span></p>
-                </div>​​​​​​​
-            </div>
-            <div style="clear:both;"></div>
-        </div>
-
-
-
-
-
-        </div>
-    </div>
-</div>
-
-
-
-
-    <!-- SECTION PATROCINIO -->
-<div style="padding: 90px 10px; background-image: url('_Assets/_Assets/KV_FIT2024_2.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-    <div data-layout="true">
-        <div data-section="true" class="">
-            <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-                <div style="clear:both;"></div>
-                <div data-container="true" class="columnContainer" data-container-width="100"
-                    style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container6c93cfa0fa6ad1689693287224">
-                    <div data-editorblocktype="Text">
-                        <p><span style="padding: 4px; background-color: #8AFEDC; color: #1D3C67; text-transform: uppercase; letter-spacing: 3;">Patrocínio</span></p>
-                    </div>
-                    <div data-editorblocktype="Text" style="margin: 50px 0px;">
-                        <h1><span style="white-space:pre-wrap; color: white;">Apoie o Fórum ITL de Inovação do Transporte e fortaleça sua marca:</span></h1>
-                    </div>
-                    <div data-editorblocktype="Text" style="margin: 15px 0px;">
-                        <p><span style="white-space:pre-wrap; text-transform: uppercase; font-size: 14px; color: white; letter-spacing: 3;"
-                            >Entre em contato com a Coordenação de Novos Negócios</span></p>
-                    </div>
-                    <div data-editorblocktype="Text" style="margin: 20px 0px;">
-                        <img src="https://publicador.sestsenat.org.br/arquivos/30577ee5-92fb-4c15-b5c1-5a84a13f17de.svg" style="height: 15px; margin-bottom: -3px; margin-right: 4px;">
-                        <p style="display: inline;"><span style="white-space:pre-wrap; font-size: 14px; color: white; letter-spacing: 1;">(61) 2196-5700</span></p>
-                    </div>
-                    <div data-editorblocktype="Text" style="margin: 20px 0px;">
-                        <img src="https://publicador.sestsenat.org.br/arquivos/42a921c8-0f54-4da9-bf13-ce3f99950733.svg" style="height: 15px; margin-bottom: -3px; margin-right: 4px;">
-                        <a href="mailto:michellerodrigues@cnt.org.br" style="text-decoration-color: white;">
-                        <p style="display: inline;"><span style="white-space:pre-wrap; font-size: 14px; color: white; letter-spacing: 1;">michellerodrigues@cnt.org.br</span></p>
-                        </a>
-                    </div>
-                </div>
-
-
-            <!-- CARD FORMULARIO -->
-            <div data-section="true" style="padding: 10px;" class="">
-                <div style="display: flex; max-width: 100%; flex-wrap: wrap; background-color: white; padding: 30px;" class="containerWrapper">
-                    <div style="clear:both;"></div>
-                    <div data-container="true" class="columnContainer" data-container-width="50"
-                        style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                        id="container9e626303f76fa1689693366407">
-                        <div data-editorblocktype="Text">
-                            <h1><span style="white-space:pre-wrap;color: #22769D;">Proposta<br>personalizada</span></h1>
-                        </div>
-                        <div data-editorblocktype="Text" style="margin-top: 20px;">
-                            <p><span style="white-space:pre-wrap;">Entre em contato para propor uma parceria de acordo com seu contexto</span></p>
-                        </div>
-                    </div>
-    
-                    <!-- BOTAO INSCREVA-SE -->
-        <div data-section="true" style="padding: 50px 0px;" class="">
-            <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
-                <div style="clear:both;"></div>
-                <div data-container="true" class="columnContainer" data-container-width="100"
-                    style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;"
-                    id="container199a5499b65ce1689693032726">
-                    <div data-editorblocktype="Button"><a class="inscrevase" style="background-color: #1D3C67; color: white; width: 250px; font-size: 12px;"
-                        href="" 
-                        >Solicitar contato</a>
-                    </div>
-                </div>
-                <div style="clear:both;"></div>
-            </div>
-        </div>
-                    <div style="clear:both;"></div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- FOOTER -->
-<div style="background-color: #535353; padding-bottom: 50px;">
-        <div data-layout="true">
-        <div data-section="true" class="">
-            <div style="display: flex; width: 100%; flex-wrap: wrap; " class="containerWrapper">
-
-                <!--ITAU-->
-                <div data-container="true" class="columnContainer" data-container-width="100"
-                    style="width: calc(25% - 0px); margin-top: 50px;"
-                    id="container9656fdf8cc8591689693347742">
-                    <div data-editorblocktype="Text" style="text-align: center; margin-bottom: 10px;">
-                        <p style="text-align: center; text-transform: uppercase; color: #22769D; letter-spacing: 3; font-size: 12px;">Patrocinador:</p>
-                    </div>
-                    <div>
-                        <img src="https://publicador.sestsenat.org.br/arquivos/9c5487c3-0f24-41eb-902f-9dd0f924cd50.png" class="itauLogo">
-                    </div>
-                </div>
-
-                <!--IBMEC-->
-                <div data-container="true" class="columnContainer" data-container-width="100"
-                    style="width: calc(25% - 0px); margin-top: 50px;"
-                    id="container9656fdf8cc8591689693347742">
-                    <div data-editorblocktype="Text" style="text-align: center; margin-bottom: 10px;">
-                        <p style="text-align: center; text-transform: uppercase; color: #22769D; letter-spacing: 3; font-size: 12px;">Apoiador:</p>
-                    </div>
-                    <div>
-                        <img src="https://publicador.sestsenat.org.br/arquivos/d3d1c9cc-b7a6-44a7-98b4-40438b3c8f6f.svg" class="ibmecLogo">
-                    </div>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>3º Painel:<br></strong></span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong></strong>Governança e Sucessão familiar: Desafios e Soluções</strong></span></p>
+                    <p class="aitividade"><b> Ricardo Vaze - Águia Branca </b></p>
                     
-                </div>
+                </div>​​​​​​​
+            </div>
+            <hr style="width: 100%;">
+            <div style="clear:both;"></div>
+        </div>
+ -->
 
-                <div data-container="true" class="columnContainer" data-container-width="100"
-                    style="width: calc(50% - 0px); margin-top: 50px;"
-                    id="container9656fdf8cc8591689693347742">
-                    <div data-editorblocktype="Text" style="text-align: center; margin-bottom: 10px;">
-                        <p style="text-align: center; text-transform: uppercase; color: #22769D; letter-spacing: 3; font-size: 12px;">Realização:</p>
-                    </div>
-                    <div data-section="true" style="padding: 10px;" class="">
-                        <div class="footer" style="min-height: 140px; display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+
+       
+        <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="horario"><span style="white-space:pre-wrap;">12h30 às 14h</span></p>
+                </div>
+            </div>
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="atividade"><span style="white-space:pre-wrap;">Almoço</span></p>
+                </div>​​​​​​​
+            </div>
+            <hr style="width: 100%;">
+            <div style="clear:both;"></div>
+        </div>
+
+
+        
+        <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="horario"><span style="white-space:pre-wrap;">14h às 15h</span></p>
+                </div>
+            </div>
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Palestra Magna – Governança em Empresas Familiares</strong></span></p>
+                </div>​​​​​​​
+            </div>
+            <hr style="width: 100%;">
+            <div style="clear:both;"></div>
+        </div>
+
+
+        
+        <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="horario"><span style="white-space:pre-wrap;">15h às 16h</span></p>
+                </div>
+            </div>
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>3º Painel:<br></strong></span></p>
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong></strong>Governança e Sucessão familiar: Desafios e Soluções</strong></span></p>
+                    <p class="atividade"><b>  Ricardo Vaze - Águia Branca</b></p>
+                    <!-- <p class="atividade"> <strong>Empresas convidadas</strong></p>-->
+                </div>​​​​​​​
+            </div>
+            <hr style="width: 100%;">
+            <div style="clear:both;"></div>
+        </div>
+        <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+            <div data-container="true" class="columnContainer" data-container-width="20" style="padding: 10px; display: block; min-width: 15px; width: calc(20% - 0px); box-sizing: border-box; flex-direction: column; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="horario"><span style="white-space:pre-wrap;">16h às 17h</span></p>
+                </div>
+            </div>
+            <div data-container="true" class="columnContainer" data-container-width="80" style="display: block; min-width: 15px; width: calc(80% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                <div data-editorblocktype="Text">
+                    <p class="atividade"><span style="white-space:pre-wrap;"><strong>Encerramento – Diretoria Executiva do ITL</strong></span></p>
+                    <p class="atividade"><b>Coquetel</b></p>
+                </div>​​​​​​​
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+
+
+
+
+
+        </div><strong>
+    </strong></div><strong>
+</strong></div><strong>
+
+
+
+
+
+    
+    <div style="padding: 90px 10px; background-image: url( https://publicador.sestsenat.org.br/arquivos/3b3d69cc-e5bf-49ed-aa43-f9ae682bcfde.png ); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div data-layout="true">
+            <div data-section="true" class="">
+                <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+                    <div style="clear:both;"></div>
+                    <div data-container="true" class="columnContainer" data-container-width="100" style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                        <div data-editorblocktype="Text">
+                            <p><span style="padding: 4px; background-color: #8AFEDC; color: #1D3C67; text-transform: uppercase; letter-spacing: 3;">Patrocínio</span></p>
+                        </div>
+                        <div data-editorblocktype="Text" style="margin: 50px 0px;">
+                            <h1><span style="white-space:pre-wrap; color: white;">Tenha sua marca vista antes, durante e após o evento!</span></h1>
+                        </div>
+                        <div data-editorblocktype="Text" style="margin: 15px 0px;">
+                            <p><span style="white-space:pre-wrap; text-transform: uppercase; font-size: 14px; color: white; letter-spacing: 3;">Conheça as imperdíveis oportunidades para vincular sua marca ao setor que movimenta o Brasil.<br><br>Você estará a um passo das autoridades com poder decisório e dos empresários mais influentes do transporte.</span></p>
+                        </div>
+                       </div>
+                
+                <div data-section="true" style="padding: 10px;" class="">
+                    <div style="display: flex; max-width: 100%; flex-wrap: wrap; background-color: white; padding: 30px;" class="containerWrapper">
+                        <div style="clear:both;"></div>
+                        <div data-container="true" class="columnContainer" data-container-width="50" style="display: block; min-height: 70px; min-width: 15px; width: calc(50% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                            <div data-editorblocktype="Text">
+                                <h1><span style="white-space:pre-wrap;color: #22769D;">Proposta personalizada</span></h1>
+                            </div>
+                            <div data-editorblocktype="Text" style="margin-top: 20px;">
+                                <p><span style="white-space:pre-wrap;">Entre em contato para propor uma parceria! </span></p>
+                            </div>
+                        </div>
+        
+                       
+            <div data-section="true" style="padding: 50px 0px;" class="">
+                <div style="display: flex; width: 100%; flex-wrap: wrap;" class="containerWrapper">
+                    <div style="clear:both;"></div>
+                    <div data-container="true" class="columnContainer" data-container-width="100" style="display: block; min-height: 70px; min-width: 20px; width: calc(100% - 0px); box-sizing: border-box; flex-direction: column; padding: 10px; float: left; word-wrap: break-word; word-break: break-word; word-wrap: break-word; word-break: break-word;">
+                        <div data-editorblocktype="Button"><a href="https://eventos.sestsenat.org.br/fit_patrocionio/"><p class="inscrevase" style="background-color: #82FC97;">Entre em contato aqui </p></a>
                             
                         </div>
                     </div>
+                    <div style="clear:both;"></div>
                 </div>
-
-                
-                <div style="clear:both;"></div>
+            </div>
+                        <div style="clear:both;"></div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div style="background-color: #012264;">
         
+        <div style="display: flex; justify-content: center;">
+           
+            <img class="mt-5 mb-5" style="width: 25%;" src="https://publicador.sestsenat.org.br/arquivos/e01c08b4-adf6-4b7d-bcb4-9b283f0b299b.svg" alt="">
+        </div>
+    
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
